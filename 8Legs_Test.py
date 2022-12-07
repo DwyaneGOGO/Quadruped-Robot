@@ -1,8 +1,8 @@
 from math import sin, cos
-from pylx16a.lx16a import *
+from pylx16a import *
 import time
 
-LX16A.initialize("/dev/ttyUSB0", 0.1)
+LX16A.initialize("ttyUSB0", 0.1)
 
 try:
     servo1 = LX16A(1)
